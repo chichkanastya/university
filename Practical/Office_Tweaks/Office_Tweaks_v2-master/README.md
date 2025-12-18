@@ -1,14 +1,14 @@
-# Office Tweaks
+# 🩵Office Tweaks
 
 
 
-## Что умеет?
+## 🩵Что умеет?
 - Смена рабочего каталога (в интерактивном режиме)
 - Конвертация PDF в DOCX и наоборот
 - Сжатие изображений (JPEG, PNG, GIF)
 - Удаление файлов
 
-## Установка
+## 🩵Установка
 1. Склонировать репозиторий: ``
 2. Python 3.10+
 3. Создайте и активируйте виртуальное окружение:
@@ -17,9 +17,9 @@
 4. Установите зависимости:
    `pip install -r requirements.txt`
 
-## Запуск
+## 🩵Запуск
 
-### Интерактивный режим
+### 🩵Интерактивный режим
 Запустите без аргументов или с флагом `-i`:
 ```bash
 python office_tweaks.py
@@ -27,9 +27,9 @@ python office_tweaks.py
 python office_tweaks.py --interactive
 ```
 
-### Режим командной строки (CLI)
+### 🩵Режим командной строки (CLI)
 
-#### Конвертация
+#### 🩵Конвертация
 ```bash
 # Один файл PDF в DOCX
 python office_tweaks.py --pdf2docx "C:\docs\report.pdf"
@@ -38,7 +38,7 @@ python office_tweaks.py --pdf2docx "C:\docs\report.pdf"
 python office_tweaks.py --docx2pdf all --workdir "C:\docs"
 ```
 
-#### Сжатие изображений
+#### 🩵Сжатие изображений
 ```bash
 # Одно изображение с качеством 75
 python office_tweaks.py --compress-images "photo.jpg" --quality 75
@@ -47,7 +47,7 @@ python office_tweaks.py --compress-images "photo.jpg" --quality 75
 python office_tweaks.py --compress-images all --workdir "C:\images" --quality 85
 ```
 
-#### Удаление файлов
+#### 🩵Удаление файлов
 ```bash
 # Удалить все файлы с расширением docx в папке Temp
 python office_tweaks.py --delete --delete-mode extension --delete-pattern docx --delete-dir "C:\Temp"
@@ -56,7 +56,7 @@ python office_tweaks.py --delete --delete-mode extension --delete-pattern docx -
 python office_tweaks.py --delete --delete-mode startswith --delete-pattern "backup_" --delete-dir "C:\archive"
 ```
 
-## Сборка EXE
+## 🩵Сборка EXE
 Для сборки исполняемого файла используйте PyInstaller:
 ```bash
 pyinstaller --onefile --console --name Office_Tweaks office_tweaks.py
