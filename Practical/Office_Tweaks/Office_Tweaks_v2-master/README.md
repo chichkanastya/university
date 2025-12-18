@@ -20,7 +20,7 @@
 ## 🩵Запуск
 
 ### 🩵Интерактивный режим
-Запустите без аргументов или с флагом `-i`:
+🐛Запустите без аргументов или с флагом `-i`:
 ```bash
 python office_tweaks.py
 # или
@@ -57,7 +57,7 @@ python office_tweaks.py --delete --delete-mode startswith --delete-pattern "back
 ```
 
 ## 🩵Сборка EXE
-Для сборки исполняемого файла используйте PyInstaller:
+🐛Для сборки исполняемого файла используйте PyInstaller:
 ```bash
 pyinstaller --onefile --console --name Office_Tweaks office_tweaks.py
 ```
