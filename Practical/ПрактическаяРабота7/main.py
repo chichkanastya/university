@@ -17,7 +17,7 @@ streets = re.findall(street_pattern, content, re.IGNORECASE)
 phone = re.findall(num_pattern, content, re.IGNORECASE)
 table = re.findall(raspi_pattern, content, re.IGNORECASE)
 
-with open('data.csv', 'w', newline='', encoding='utf-8-sig') as file:
+with open('data.csv', 'w', newline='', encoding='utf-8') as file:
     writer = csv.writer(file)
     writer.writerow(['Наименование организации', 'Адрес организации', 'Телефон организации', 'Время работы организации'])
  
@@ -32,3 +32,4 @@ with open('data.csv', 'w', newline='', encoding='utf-8-sig') as file:
             table[i] if i < len(table) else ''
         ]
         writer.writerow(row)
+
